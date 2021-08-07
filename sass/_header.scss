@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+}
+
+.nav {
+  margin-top: 21px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid;
+
+  &-link {
+    margin-right: 40px;
+    height: 48px;
+  }
+  .header-logo {
+    width: 190px;
+    height: 48px;
+  }
+}
+
+.social {
+  align-items: center;
+  width: 150px;
+  margin-right: 149px;
+
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.menu {
+  align-items: center;
+  width: 371px;
+  margin-right: 39px;
+
+  &-item:not(:last-child) {
+    margin-right: 45px;
+  }
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &.registration {
+    height: 48px;
+    width: 208px;
+    margin-right: 10px;
+  }
+
+  &.login {
+    height: 48px;
+    width: 133px;
+  }
+
+  &-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 9px;
+  }
+}
