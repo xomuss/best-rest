@@ -1,0 +1,28 @@
+.search-section {
+  margin-top: 245px;
+  display: flex;
+
+  &__title {
+    display: inline-block;
+    width: 649px;
+    height: 146px;
+    font-family: $second-font;
+    font-weight: 500;
+    font-size: 62px;
+    line-height: 1.18;
+  }
+}
+
+.search-form {
+  margin-top: 40px;
+
+  &__input {
+    width: 400px;
+    height: 56px;
+  }
+
+  &__button {
+    width: 165px;
+    height: 56px;
+  }
+}

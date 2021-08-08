@@ -68,23 +68,25 @@
 
   <main>
     <!--Find the best palce-->
-    <section class="container">
-      <h1>
-        Find the best place
-      to rest while traveling
-      </h1>
-      <form>
-        <label>
-          <input type="text">
-        </label>
-        <button type="submit">
-          Search
-        </button>
-      </form>
+    <section class="container search-section" >
+      <div>
+        <h1 class="search-section__title">
+          Find the best place
+          to rest while traveling
+        </h1>
+        <form class="search-form">
+          <label>
+            <input class="search-form__input" type="text">
+          </label>
+          <button class="search-form__button" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
     
     <!-- Slider -->
     
-      <div>
+      <div class="rewiev-slider">
         <p>
           Thanks to BestRest,
         I met new friends & visited Europe for a penny!
@@ -95,13 +97,33 @@
       </div>
     </section>
 <!-- How it works? -->
-    <section class="container">
-      <h2>How it works?</h2>
-      <ul>
-        <li>Search for free places in your area</li>
-        <li>Choose the best host from the list</li>
-        <li>Confirm the terms & make the payment</li>
-        <li>Reach the place & rest before the placement</li>
+    <section class="container how-works">
+      <h2 class="how-works__title">How it works?</h2>
+      <ul class="how-works__list">
+        <li class="how-works__item">
+          <svg class="how-works__icon">
+            <use href="./img/svg/how-it-works-sprite.svg#icon-1"></use>
+          </svg>
+          <p class="how-works__text">Search for free <br> places in your area</p>
+        </li>
+        <li class="how-works__item">
+          <svg class="how-works__icon">
+            <use href="./img/svg/how-it-works-sprite.svg#icon-2"></use>
+          </svg>
+          <p class="how-works__text">Choose the best <br> host from the list</p>
+        </li>
+        <li class="how-works__item">
+          <svg class="how-works__icon">
+            <use href="./img/svg/how-it-works-sprite.svg#icon-3"></use>
+          </svg>
+          <p class="how-works__text">Confirm the terms & <br> make the payment</p>
+        </li>
+        <li class="how-works__item">
+          <svg class="how-works__icon">
+            <use href="./img/svg/how-it-works-sprite.svg#icon-4"></use>
+          </svg>
+          <p class="how-works__text">Reach the place & rest <br> before   the placement</p>
+        </li>
       </ul>
     </section>
   </main>
