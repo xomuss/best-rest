@@ -1,5 +1,6 @@
 $main-font: 'Roboto', sans-serif;
 $second-font: 'Rubik', sans-serif;
+$main-color: #FFFFFF;
 
 * {
   padding: 0;
@@ -15,10 +16,10 @@ img {
 
 body {
   font-family: $main-font;
-  color: white;
+  color: $main-color;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.25;
   //  background-color: $black-color;
   background-image: url('../img/bg-cover.jpg');

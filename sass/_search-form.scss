@@ -13,6 +13,10 @@
   }
 }
 
+.title-container{
+  color: #6CEEC7;
+}
+
 .search-form {
   margin-top: 40px;
 
@@ -24,5 +28,12 @@
   &__button {
     width: 165px;
     height: 56px;
+    background: #6CEEC7;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 22px;
+    border: 0;
+    border-top-right-radius:    5px;
+    border-bottom-right-radius: 5px;
   }
 }

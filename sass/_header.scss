@@ -29,6 +29,7 @@
   &-icon {
     width: 30px;
     height: 30px;
+    fill: $main-color;
   }
 }
 
@@ -46,16 +47,27 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-weight: 500;
+  font-size: 19px;
+  border-radius: 5px;
 
   &.registration {
     height: 48px;
     width: 208px;
     margin-right: 10px;
+    background: #6CEEC7;
+    // transform: matrix(-1, 0, 0, 1, 0, 0);
   }
 
   &.login {
     height: 48px;
     width: 133px;
+    color: $main-color;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+/* Note: backdrop-filter has minimal browser support */
   }
 
   &-icon {
@@ -63,4 +75,8 @@
     height: 24px;
     margin-left: 9px;
   }
+}
+
+.button.login>.button-icon{
+  fill: $main-color
 }
