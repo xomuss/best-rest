@@ -24,6 +24,9 @@
     width: 400px;
     height: 56px;
     border: 0;
+    padding-left: 55px;
+
+        
   }
 
   &__button {
@@ -37,4 +40,51 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
+
+  &__lable{
+    position: relative;
+    left: 0;
+    color: #6A6A6A;
+    font-size: 19px;
+    line-height: 22px;
+    
+  }
+
+  &__icon{
+    position: absolute;
+    left: 16px;
+    top: 0;
+    width: 24px;
+    height: 24px;  
+  }
+
+  & span{
+    position: absolute;
+    bottom: 0;
+    left: 55px;
+    opacity: .5;
+    visibility: hidden;
+    transition: $main-animation;
+  }
+
 }
+
+.search-form__input:placeholder-shown ~ span {
+  visibility: visible;
+}
+
+.search-form__input:placeholder-shown:focus ~ span,
+.search-form__input:not(:placeholder-shown) ~ span {
+  bottom: 100%;
+  left: 55px;
+  opacity: 1;
+  font-size: 11px;
+  line-height: 13px;
+  visibility: visible;
+}
+
+// .search-form{
+//   position: relative;
+// }
+
+// http://shpargalkablog.ru/2018/01/placeholder.html
