@@ -1,8 +1,45 @@
 .drop-down {
   position: absolute;
-  left: 0;
-
+  left: -55px;
+  top: 58px;
   width: 168px;
   height: 114px;
-  background-color: yellow;
+  background: #FFFFFF;
+  border-radius: 0 0 5px 5px;
+
+
+  &__item{
+    font-size: 15px;
+    line-height: 18px;
+    padding-left: 12px;
+    padding-top: 12px;
+    /* identical to box height */
+    color: #969696;
+  }
+
+  &__item:not(:last-child){
+    padding-bottom: 4px;
+  }
+}
+
+.drop-box{
+  position: relative;
+  
+
+  &__link{
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__icon{
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
+
+  & a:hover .drop-box__icon,
+  & a:focus .drop-box__icon{
+    fill: $secon-color;
+    transition: $main-animation;
+  }
 }
