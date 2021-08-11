@@ -4,11 +4,16 @@
   top: 58px;
   width: 168px;
   height: 114px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 0 0 5px 5px;
+  &.is-close {
+    display: none;
+  }
+  &.is-open {
+    display: block;
+  }
 
-
-  &__item{
+  &__item {
     font-size: 15px;
     line-height: 18px;
     padding-left: 12px;
@@ -17,28 +22,26 @@
     color: #969696;
   }
 
-  &__item:not(:last-child){
+  &__item:not(:last-child) {
     padding-bottom: 4px;
   }
 }
 
-.drop-box{
+.drop-box {
   position: relative;
-  
 
-  &__link{
+  &__link {
     display: inline-flex;
     align-items: center;
   }
 
-  &__icon{
+  &__icon {
     width: 20px;
     height: 20px;
     fill: #fff;
   }
 
-  & a:hover .drop-box__icon,
-  & a:focus .drop-box__icon{
+  &:hover > .drop-box__icon {
     fill: $secon-color;
     transition: $main-animation;
   }
