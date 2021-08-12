@@ -14,16 +14,22 @@
   }
 
   &__item {
+   
+
+    height: 38px;
+    
     font-size: 15px;
     line-height: 18px;
-    padding-left: 12px;
-    padding-top: 12px;
+    
     /* identical to box height */
     color: #969696;
   }
 
-  &__item:not(:last-child) {
-    padding-bottom: 4px;
+  &__link {
+    display: block;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -44,5 +50,19 @@
   &:hover > .drop-box__icon {
     fill: $secon-color;
     transition: $main-animation;
+  }
+}
+
+.drop-down .drop-down__item:hover {
+  padding-left: 4px;
+  transition: $main-animation;
+  & a {
+  width: 160px;
+  height: 34px;
+  padding-left: 20px;
+  color: #000000;
+  background: #F1F2F4;
+  border-radius: 2px;
+  transition: $main-animation;
   }
 }

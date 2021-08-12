@@ -56,6 +56,11 @@
 
   &-item {
     position: relative;
+
+    // &>a {
+    //   padding-bottom: 34px;
+    // padding-top: 34px;
+    // }
   }
 
   &-item:not(:last-child) {
@@ -63,26 +68,36 @@
   }
 
   &-item:hover,
-  &-item:focus {
+  &-item a:focus {
     color: $secon-color;
     transition: $main-animation;
+
+    & .drop-box__icon {
+      fill: $secon-color;
+      transition: $main-animation;
+    }
   }
-  &-item::after {
+
+
+  &-item .drop-box__link::after,
+  &-item .menu-item_link::after {
     content: '';
     position: absolute;
     bottom: -34px;
-    left: 0;
+    left: 50%;
 
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
+    transform: translate(-50%, -50%);
+
+    width: 24px;
+    height: 3px;
+    border-radius: 10px;
     background-color: $secon-color;
 
     transition: $main-animation;
 
     opacity: 0;
   }
-  &-item:hover::after {
+  &-item a:hover::after {
     opacity: 1;
   }
 }
@@ -155,6 +170,7 @@
   // transform: matrix(-1, 0, 0, 1, 0, 0);
   & svg {
     fill: #000000;
+    transform: rotate(-90deg);
     transition: $main-animation;
   }
 }

@@ -20,6 +20,10 @@
 
   & .menu-item {
     color: #5a5a5a;
+    
+    & > a::after {
+      bottom: -23px;
+    }
   }
 
   & .button.login {
@@ -34,4 +38,54 @@
       fill: #000000;
     }
   }
+
+  & .social-item:hover svg {
+    fill: $secon-color;
+    transition: $main-animation;
+  }
+
+  & .menu-item:hover,
+  & .menu-item a:focus {
+    color: $secon-color;
+    transition: $main-animation;
+
+    & .drop-box__icon {
+      fill: $secon-color;
+    }
+  }
+
+  & .drop-box__icon {
+    fill: #5A5A5A;
+  }
+
+  & .drop-down {
+    top: 48px;
+  }
+
+  & .button.registration:hover,
+  & .button.registration:focus {
+    border: 1px solid $secon-color;
+    background-color: #fff;
+    transition: $main-animation;
+  }
+
+  & .button.login:hover,
+  & .button.login:focus {
+    background: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+    color: #fff;
+    transition: $main-animation;
+
+    & .button-icon {
+      fill: #fff;
+      transform: rotate(-90deg);
+      transition: $main-animation;
+
+    }
+  }
 }
+
+
