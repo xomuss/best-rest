@@ -137,6 +137,7 @@ button {
 }
 .menu-item:hover .drop-box__icon, .menu-item a:focus .drop-box__icon {
   fill: #6ceec7;
+  transform: rotate(-180deg);
   transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-item .drop-box__link::after, .menu-item .menu-item_link::after {
@@ -490,10 +491,6 @@ button {
   width: 20px;
   height: 20px;
   fill: #fff;
-}
-.drop-box:hover > .drop-box__icon {
-  fill: #6ceec7;
-  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .drop-down .drop-down__item:hover {

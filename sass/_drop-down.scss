@@ -47,10 +47,11 @@
     fill: #fff;
   }
 
-  &:hover > .drop-box__icon {
-    fill: $secon-color;
-    transition: $main-animation;
-  }
+  // &:hover > .drop-box__icon {
+  //   fill: $secon-color;
+  //   transform: rotate(180deg);
+  //   transition: $main-animation;
+  // }
 }
 
 .drop-down .drop-down__item:hover {
@@ -66,3 +67,4 @@
   transition: $main-animation;
   }
 }
+

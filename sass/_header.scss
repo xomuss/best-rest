@@ -74,7 +74,9 @@
 
     & .drop-box__icon {
       fill: $secon-color;
+      transform: rotate(-180deg);
       transition: $main-animation;
+
     }
   }
 

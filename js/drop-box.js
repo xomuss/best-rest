@@ -1,28 +1,16 @@
 const dropDown = document.querySelector('#js-dropDown');
 const dropBox = document.querySelector('#js-dropBox');
+const dropBoxIcon = document.querySelector('#js-dropBox__icon');
 
-console.log(dropBox);
-console.log(dropDown);
+console.log(dropBoxIcon);
 
 onDropBoxKlick = e => {
-  console.log(e.currentTarget.className);
-  if (e.currentTarget.className === 'menu-item drop-box') {
-    dropDown.classList.add('is-open');
-    dropDown.classList.remove('is-close');
+  if (e.target.className === 'drop-box__link') {
+    dropDown.classList.toggle('is-close');
+  } else {
+    dropDown.classList.add('is-close');
   }
-  // dropDown.classList.add('is-close');
-  // dropDown.classList.remove('is-open');
 };
 
-aaa = e => {
-  console.log(e.target);
-};
-// onDropBoxClose = e => {
-//   if (e.target.className !== 'menu-item drop-box') {
-//     dropDown.classList.add('is-close');
-//     dropDown.classList.remove('is-open');
-//   }
-// };
 
-dropBox.addEventListener('click', onDropBoxKlick);
-window.addEventListener('click', aaa);
+document.body.addEventListener('click', onDropBoxKlick);
