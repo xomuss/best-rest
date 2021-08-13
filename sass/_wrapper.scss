@@ -1,8 +1,8 @@
 .wrapper {
-    background: url('../img/bg-cover.jpg');
-    background-size: cover;
+  background: url('../img/bg-cover-compressed.jpg');
+  background-size: cover;
 }
 
-.sticky~.test {
-    height: 70px;
+.sticky ~ .test {
+  height: 70px;
 }

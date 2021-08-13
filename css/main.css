@@ -75,7 +75,7 @@ button {
 }
 
 .wrapper {
-  background: url("../img/bg-cover.jpg");
+  background: url("../img/bg-cover-compressed.jpg");
   background-size: cover;
 }
 
