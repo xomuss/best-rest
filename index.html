@@ -124,17 +124,36 @@
         <!-- Slider -->
 
         <div class="rewiev-slider">
-          <p>
-            Thanks to BestRest,
-            I met new friends & visited Europe for a penny!
-          </p>
-          <img src="" alt="">
-          <p>Julia, New York</p>
+          <div class="rewiev-slider_container">
+            <p class="rewiev-slider_text">
+              Thanks to BestRest,
+              I met new friends & visited Europe for a penny!
+            </p>
+            <ul class="rewiev-slider_list">
+              <li><button class="rewiev-slider_button" id=1 type="button"></button></li>
+              <li><button class="rewiev-slider_button" id=2 type="button"></button></li>
+              <li><button class="rewiev-slider_button" id=3 type="button"></button></li>
+            </ul>
+            <svg class="rewiev-slider_quotes" height="13.16px" width="15.74px">
+              <use href="./img/svg/header-sprite.svg#quotes-icon"
+            </svg>
+          </div>
+          <div class="rewiev-slider_userBox">
+            <div class="rewiev-slider_img_bcg">
+              <img class="rewiev-slider_img" src="./img/review-photo-1.jpg" alt="">
+             </div>
+            <div>
+              <p class="rewiev-slider_user">Julia, New York</p>
+              <svg class="rewiev-slider_icon">
+                <use href="./img/svg/header-sprite.svg#star-icon"></use>
+              </svg>
+            </div>
+          </div>
 
         </div>
       </section>
       <!-- How it works? -->
-      <section class="container how-works">
+      <!-- <section class="container how-works">
         <h2 class="how-works__title">How it works?</h2>
         <ul class="how-works__list">
           <li class="how-works__item">
@@ -162,12 +181,13 @@
             <p class="how-works__text">Reach the place & rest <br> before the placement</p>
           </li>
         </ul>
-      </section>
+      </section> -->
     </div>
   </div>
   <div style="height: 700px;"></div>
   <script src="./js/drop-box.js"></script>
   <script src="./js/sticky-header.js"></script>
+  <script src="js/slider.js"></script>
 
 </body>
 
