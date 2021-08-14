@@ -175,7 +175,7 @@ button {
 .menu-item .menu-item_link::after {
   content: '';
   position: absolute;
-  bottom: -34px;
+  bottom: -26px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 24px;
@@ -376,7 +376,9 @@ button {
 }
 
 .search-form {
+  display: inline-flex;
   margin-top: 40px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .search-form__input {
@@ -384,9 +386,15 @@ button {
   height: 56px;
   border: 0;
   padding-left: 55px;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-form__input:focus {
+  outline: none;
 }
 
 .search-form__button {
+  display: inline-block;
   width: 165px;
   height: 56px;
   background: #6ceec7;
@@ -400,8 +408,8 @@ button {
 
 .search-form__lable {
   position: relative;
-  left: 0;
-  color: #6A6A6A;
+  display: inline-block;
+  color: #6a6a6a;
   font-size: 19px;
   line-height: 22px;
 }
@@ -409,16 +417,16 @@ button {
 .search-form__icon {
   position: absolute;
   left: 16px;
-  top: 0;
+  top: 16px;
   width: 24px;
   height: 24px;
 }
 
 .search-form span {
   position: absolute;
-  bottom: 0;
+  bottom: 16px;
   left: 55px;
-  opacity: .5;
+  opacity: 0.5;
   visibility: hidden;
   transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -429,7 +437,7 @@ button {
 
 .search-form__input:placeholder-shown:focus ~ span,
 .search-form__input:not(:placeholder-shown) ~ span {
-  bottom: 100%;
+  bottom: 40px;
   left: 55px;
   opacity: 1;
   font-size: 11px;
@@ -523,6 +531,16 @@ button {
 .rewiev-slider_icon {
   width: 24px;
   height: 24px;
+}
+
+.rewiev-slider_button:hover {
+  background: #474747;
+  border-radius: 4px;
+}
+
+.rewiev-slider_button.active {
+  background: #6ceec7;
+  border-radius: 4px;
 }
 
 .how-works {

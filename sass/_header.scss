@@ -76,16 +76,14 @@
       fill: $secon-color;
       transform: rotate(-180deg);
       transition: $main-animation;
-
     }
   }
-
 
   &-item .drop-box__link::after,
   &-item .menu-item_link::after {
     content: '';
     position: absolute;
-    bottom: -34px;
+    bottom: -26px;
     left: 50%;
 
     transform: translate(-50%, -50%);

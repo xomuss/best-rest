@@ -89,3 +89,13 @@
     height: 24px;
   }
 }
+
+.rewiev-slider_button:hover {
+  background: #474747;
+  border-radius: 4px;
+}
+
+.rewiev-slider_button.active {
+  background: $secon-color;
+  border-radius: 4px;
+}

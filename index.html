@@ -106,7 +106,7 @@
             Find the <span class="title-container"> best place
               to rest</span> while traveling
           </h1>
-          <form class="search-form">
+          <form class="search-form" >
             <label class="search-form__lable">
               <!-- Search location -->
               <input class="search-form__input" type="text" name="searchQuery" placeholder="&nbsp;">
@@ -129,11 +129,12 @@
               Thanks to BestRest,
               I met new friends & visited Europe for a penny!
             </p>
-            <ul class="rewiev-slider_list">
-              <li><button class="rewiev-slider_button" id=1 type="button"></button></li>
-              <li><button class="rewiev-slider_button" id=2 type="button"></button></li>
-              <li><button class="rewiev-slider_button" id=3 type="button"></button></li>
-            </ul>
+            <div class="rewiev-slider_list" id="comment-controls">
+              <button class="rewiev-slider_button active" data-id="0" type="button"></button>
+              <button class="rewiev-slider_button" data-id="1" type="button"></button>
+              <button class="rewiev-slider_button" data-id="2" type="button"></button>
+            </div>
+        
             <svg class="rewiev-slider_quotes" height="13.16px" width="15.74px">
               <use href="./img/svg/header-sprite.svg#quotes-icon"
             </svg>
