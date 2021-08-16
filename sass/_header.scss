@@ -8,6 +8,11 @@
 .header {
   display: flex;
   position: relative;
+
+  &.auth {
+    width: 351px;
+    height: 48px;
+  }
 }
 
 .nav {
@@ -171,6 +176,26 @@
   & svg {
     fill: #000000;
     transform: rotate(-90deg);
+    transition: $main-animation;
+  }
+}
+
+.button-wraper {
+  position: relative;
+  width: 218px;
+  height: 48px;
+}
+
+.button-anim {
+  position: absolute;
+  transition: $main-animation;
+
+  &.log {
+    right: 0;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
     transition: $main-animation;
   }
 }

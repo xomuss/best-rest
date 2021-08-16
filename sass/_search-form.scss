@@ -4,6 +4,10 @@
   display: flex;
   padding-bottom: 175px;
 
+  & > div {
+    width: 649px;
+  }
+
   &__title {
     display: inline-block;
     width: 649px;
