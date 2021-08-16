@@ -10,7 +10,7 @@ const data = [
   {
     comment:
       'Bestrest helped me a lot on my journey. I am very glad that I found such a service',
-    img: '/img/review-photo-2.png',
+    img: './img/review-photo-2.png',
     name: 'Mary',
     city: 'San Francisco',
     rating: 5,
