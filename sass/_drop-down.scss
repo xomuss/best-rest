@@ -6,6 +6,7 @@
   height: 114px;
   background: #ffffff;
   border-radius: 0 0 5px 5px;
+  z-index: 999;
   &.is-close {
     display: none;
   }
@@ -14,13 +15,11 @@
   }
 
   &__item {
-   
-
     height: 38px;
-    
+
     font-size: 15px;
     line-height: 18px;
-    
+
     /* identical to box height */
     color: #969696;
   }
@@ -58,13 +57,12 @@
   padding-left: 4px;
   transition: $main-animation;
   & a {
-  width: 160px;
-  height: 34px;
-  padding-left: 20px;
-  color: #000000;
-  background: #F1F2F4;
-  border-radius: 2px;
-  transition: $main-animation;
+    width: 160px;
+    height: 34px;
+    padding-left: 20px;
+    color: #000000;
+    background: #f1f2f4;
+    border-radius: 2px;
+    transition: $main-animation;
   }
 }
-
